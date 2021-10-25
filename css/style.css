@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eee;
+}
+
+/* header */
+#header {
+  padding: 0 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: #222;
+  height: 2.8rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+#header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-card h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.pricing-card h4 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.pricing-card li {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.pricing-card hr {
+  margin-top: 1rem;
+}
+
+#header ul li {
+  margin: 0 1.5rem;
+}
+
+#header ul li a {
+  color: #eee;
+  font-size: 1rem;
+}
+
+#header .logo img {
+  width: 40px;
+  cursor: pointer;
+}
+
+/* overview */
+#Overview {
+  margin: 10rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Overview .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 8rem;
+  cursor: pointer;
+}
+
+#Overview .card h2 {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+#Overview .card p {
+  font-style: italic;
+}
+
+.fas,
+.fab {
+  font-size: 3rem;
+  color: #222;
+}
+
+/* how it works */
+#How_it_works {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* pricing */
+#Pricing {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-card {
+  margin: 0 3rem;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #222;
+  padding: 20px 10px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.pricing-card button {
+  background-color: #222;
+  color: #eee;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.4s ease-in;
+}
+
+.pricing-card button:hover {
+  color: #1ed760;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer span {
+  display: flex;
+  justify-content: center;
+}
+
+/* form */
+#form {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form label {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+#form input[type="email"] {
+  width: 25rem;
+  margin: 10px 0;
+  padding: 10px 5px;
+  border: 0.5px solid #222;
+  border-radius: 5px;
+}
+
+#form input[type="submit"] {
+  width: 100px;
+  padding: 10px 5px;
+  background-color: #1ed760;
+  border: #1ed760;
+  border-radius: 5px;
+  color: #eee;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  #Overview {
+    flex-direction: column;
+    margin: 4rem 0;
+  }
+
+  #Overview .card {
+    margin: 2rem 0;
+  }
+
+  #Pricing {
+    flex-direction: column;
+    margin: 4rem 0;
+  }
+
+  #Pricing .pricing-card {
+    margin: 1rem 0;
+  }
+
+  #form label {
+    font-size: 1.5rem;
+  }
+
+  #form input[type="submit"] {
+    width: 100%;
+  }
+}
